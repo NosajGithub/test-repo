@@ -1,0 +1,654 @@
+## GoogleVis on Github
+
+Let us first load the package and set the option `plot.gvis` to `chart` so that only the chart fragment is printed.
+
+
+```r
+require(googleVis)
+options(gvis.plot.tag = "chart")
+```
+
+
+Now it is time to generate a chart
+
+
+```r
+M1 <- gvisMotionChart(Fruits, idvar = "Fruit", timevar = "Year")
+plot(M1)
+```
+
+<!-- MotionChart generated in R 3.1.0 by googleVis 0.5.1 package -->
+<!-- Sat May  3 03:10:41 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID32204d26c4a8 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "All Humanities",
+2001,
+11390,
+3.511237928,
+"HUMN" 
+],
+[
+ "All Humanities",
+2002,
+12441,
+3.515339067,
+"HUMN" 
+],
+[
+ "All Humanities",
+2003,
+12114,
+3.502008695,
+"HUMN" 
+],
+[
+ "All Humanities",
+2004,
+11828,
+3.560421598,
+"HUMN" 
+],
+[
+ "All Humanities",
+2005,
+11239,
+3.581724353,
+"HUMN" 
+],
+[
+ "All Humanities",
+2006,
+11468,
+3.578333915,
+"HUMN" 
+],
+[
+ "All Humanities",
+2007,
+11181,
+3.628983693,
+"HUMN" 
+],
+[
+ "All Humanities",
+2008,
+11485,
+3.61631113,
+"HUMN" 
+],
+[
+ "All Humanities",
+2009,
+11019,
+3.622561031,
+"HUMN" 
+],
+[
+ "All Humanities",
+2010,
+10440,
+3.623563218,
+"HUMN" 
+],
+[
+ "All Humanities",
+2011,
+10005,
+3.650041646,
+"HUMN" 
+],
+[
+ "All Humanities",
+2012,
+9577,
+3.673175316,
+"HUMN" 
+],
+[
+ "All Humanities",
+2013,
+9077,
+3.690169292,
+"HUMN" 
+],
+[
+ "All Interdisciplinary",
+2001,
+3854,
+3.478117973,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2002,
+3873,
+3.471727343,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2003,
+3962,
+3.455157328,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2004,
+4231,
+3.469235011,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2005,
+5058,
+3.450243838,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2006,
+5242,
+3.503624571,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2007,
+5467,
+3.513200415,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2008,
+5646,
+3.537194474,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2009,
+5962,
+3.571508442,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2010,
+5710,
+3.605487449,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2011,
+5429,
+3.632037822,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2012,
+5862,
+3.628625043,
+"INT" 
+],
+[
+ "All Interdisciplinary",
+2013,
+6053,
+3.669089708,
+"INT" 
+],
+[
+ "All Other",
+2001,
+580,
+3.314942529,
+"NA" 
+],
+[
+ "All Other",
+2002,
+373,
+3.481680071,
+"NA" 
+],
+[
+ "All Other",
+2003,
+470,
+3.424113475,
+"NA" 
+],
+[
+ "All Other",
+2004,
+310,
+3.420430108,
+"NA" 
+],
+[
+ "All Other",
+2005,
+225,
+3.574814815,
+"NA" 
+],
+[
+ "All Other",
+2006,
+333,
+3.471471471,
+"NA" 
+],
+[
+ "All Other",
+2007,
+459,
+3.583877996,
+"NA" 
+],
+[
+ "All Other",
+2008,
+384,
+3.556423611,
+"NA" 
+],
+[
+ "All Other",
+2009,
+673,
+3.450718177,
+"NA" 
+],
+[
+ "All Other",
+2010,
+815,
+3.469529652,
+"NA" 
+],
+[
+ "All Other",
+2011,
+876,
+3.485920852,
+"NA" 
+],
+[
+ "All Other",
+2012,
+893,
+3.426278462,
+"NA" 
+],
+[
+ "All Other",
+2013,
+1131,
+3.51665193,
+"NA" 
+],
+[
+ "All Sciences",
+2001,
+9491,
+3.275629544,
+"SCI" 
+],
+[
+ "All Sciences",
+2002,
+9184,
+3.234574623,
+"SCI" 
+],
+[
+ "All Sciences",
+2003,
+9447,
+3.272573304,
+"SCI" 
+],
+[
+ "All Sciences",
+2004,
+9065,
+3.279168965,
+"SCI" 
+],
+[
+ "All Sciences",
+2005,
+8797,
+3.285324542,
+"SCI" 
+],
+[
+ "All Sciences",
+2006,
+9819,
+3.26048138,
+"SCI" 
+],
+[
+ "All Sciences",
+2007,
+9662,
+3.294210998,
+"SCI" 
+],
+[
+ "All Sciences",
+2008,
+9697,
+3.31040528,
+"SCI" 
+],
+[
+ "All Sciences",
+2009,
+9747,
+3.273520057,
+"SCI" 
+],
+[
+ "All Sciences",
+2010,
+10451,
+3.277900041,
+"SCI" 
+],
+[
+ "All Sciences",
+2011,
+10810,
+3.341443108,
+"SCI" 
+],
+[
+ "All Sciences",
+2012,
+11875,
+3.35997193,
+"SCI" 
+],
+[
+ "All Sciences",
+2013,
+12231,
+3.35170196,
+"SCI" 
+],
+[
+ "All Social Sciences",
+2001,
+12598,
+3.306662433,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2002,
+13326,
+3.324553504,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2003,
+13932,
+3.321442243,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2004,
+14541,
+3.38839603,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2005,
+14611,
+3.380238633,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2006,
+13941,
+3.379097626,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2007,
+14298,
+3.380006528,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2008,
+13536,
+3.385515169,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2009,
+14116,
+3.383725324,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2010,
+14251,
+3.371856946,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2011,
+14804,
+3.39415023,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2012,
+15324,
+3.408422518,
+"SOC" 
+],
+[
+ "All Social Sciences",
+2013,
+14967,
+3.423064074,
+"SOC" 
+],
+[
+ "Whole College",
+2001,
+37913,
+3.377909073,
+"NA" 
+],
+[
+ "Whole College",
+2002,
+39197,
+3.3800631,
+"NA" 
+],
+[
+ "Whole College",
+2003,
+39925,
+3.379144229,
+"NA" 
+],
+[
+ "Whole College",
+2004,
+39975,
+3.423331249,
+"NA" 
+],
+[
+ "Whole College",
+2005,
+39930,
+3.42600384,
+"NA" 
+],
+[
+ "Whole College",
+2006,
+40803,
+3.423302208,
+"NA" 
+],
+[
+ "Whole College",
+2007,
+41067,
+3.44761812,
+"NA" 
+],
+[
+ "Whole College",
+2008,
+40748,
+3.45531887,
+"NA" 
+],
+[
+ "Whole College",
+2009,
+41517,
+3.449293864,
+"NA" 
+],
+[
+ "Whole College",
+2010,
+41667,
+3.445284438,
+"NA" 
+],
+[
+ "Whole College",
+2011,
+41924,
+3.474350412,
+"NA" 
+],
+[
+ "Whole College",
+2012,
+43531,
+3.483471549,
+"NA" 
+],
+[
+ "Whole College",
+2013,
+43459,
+3.495470827,
+"NA" 
+] 
+];
+data.addColumn('string','Department');
+data.addColumn('number','Year');
+data.addColumn('number','enrollment');
+data.addColumn('number','grade');
+data.addColumn('string','divs');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID32204d26c4a8() {
+var data = gvisDataMotionChartID32204d26c4a8();
+var options = {};
+options["width"] =    600;
+options["height"] =    500;
+options["showHeader"] = false;
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID32204d26c4a8')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID32204d26c4a8);
+})();
+function displayChartMotionChartID32204d26c4a8() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID32204d26c4a8"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID32204d26c4a8"
+  style="width: 600px; height: 500px;">
+</div>
